@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="64115" started-at="2018-04-30T11:13:00Z" finished-at="2018-04-30T11:14:04Z">
+  <suite name="Default suite" duration-ms="70435" started-at="2018-04-30T12:10:02Z" finished-at="2018-04-30T12:11:12Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="64115" started-at="2018-04-30T11:13:00Z" finished-at="2018-04-30T11:14:04Z">
+    <test name="Default test" duration-ms="70435" started-at="2018-04-30T12:10:02Z" finished-at="2018-04-30T12:11:12Z">
       <class name="com.puma.test.Verify_Product_added_to_cart">
-        <test-method status="PASS" signature="openapplication()[pri:0, instance:com.puma.test.Verify_Product_added_to_cart@1593948d]" name="openapplication" is-config="true" duration-ms="53931" started-at="2018-04-30T16:43:00Z" finished-at="2018-04-30T16:43:54Z">
+        <test-method status="PASS" signature="openapplication()[pri:0, instance:com.puma.test.Verify_Product_added_to_cart@1593948d]" name="openapplication" is-config="true" duration-ms="60181" started-at="2018-04-30T17:40:02Z" finished-at="2018-04-30T17:41:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openapplication -->
-        <test-method status="FAIL" signature="verifyproduct()[pri:0, instance:com.puma.test.Verify_Product_added_to_cart@1593948d]" name="verifyproduct" duration-ms="10054" started-at="2018-04-30T16:43:54Z" finished-at="2018-04-30T16:44:04Z">
+        <test-method status="FAIL" signature="verifyproduct()[pri:0, instance:com.puma.test.Verify_Product_added_to_cart@1593948d]" name="verifyproduct" duration-ms="10117" started-at="2018-04-30T17:41:02Z" finished-at="2018-04-30T17:41:12Z">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
@@ -51,7 +51,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyproduct -->
-        <test-method status="PASS" signature="closeapp()[pri:0, instance:com.puma.test.Verify_Product_added_to_cart@1593948d]" name="closeapp" is-config="true" duration-ms="103" started-at="2018-04-30T16:44:04Z" finished-at="2018-04-30T16:44:04Z">
+        <test-method status="PASS" signature="closeapp()[pri:0, instance:com.puma.test.Verify_Product_added_to_cart@1593948d]" name="closeapp" is-config="true" duration-ms="108" started-at="2018-04-30T17:41:12Z" finished-at="2018-04-30T17:41:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeapp -->

@@ -9,6 +9,10 @@ import Generic.BasePage;
 
 public class ShoeDescription extends BasePage
 {
+	
+	/**
+	 * author Kusum
+	 */
 	@FindBy (xpath="//div[@class='add-to-cart']")
 	private WebElement cartBtn;
 	
@@ -25,20 +29,31 @@ public class ShoeDescription extends BasePage
 		PageFactory.initElements(driver,this);
 	}
 	
+	/**
+	 * 
+	 * @param title
+	 */
 	public void shoeDescriptionPageTitle(String title)
 	{
 		verifytitle(title);
 	}
-	
+	/**
+	 * selecting the Second item
+	 */
 	public void clickOnSelectSize()
 	{
 		selectSize.click();
 	}
+	/**
+	 * Clicking on the shoe
+	 */
 	public void clickOnSize()
 	{
 		shoeSize.click();
 	}
-	
+	/**
+	 * selecting and adding to the cart
+	 */
 	public void clickOnCart()
 	{
 		cartBtn.click();

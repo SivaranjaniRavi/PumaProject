@@ -12,9 +12,13 @@ import Generic.BasePage;
 public class CartPage extends BasePage
 {
 	
+	
+	/**
+	 * author Kusum	
+	 */
+	
 	@FindBy(xpath="//td[@class='product-cart-info']//a[contains(@href,'https://in.puma.com/catalog/product/view/id/71793/s/ignite_evoknit_lo_2_men_s_running_shoes')]")
     private WebElement productName;
-	
 	
 	
 	public CartPage(WebDriver driver) 
@@ -23,6 +27,10 @@ public class CartPage extends BasePage
 		PageFactory.initElements(driver,this);
 	}
 
+	/**
+	 * Verifying the Element in the cart is same as selected	
+	 */
+	
 	public void verifyWebElement(String element)
 	{
 	try
@@ -34,8 +42,7 @@ public class CartPage extends BasePage
 	{
 		Reporter.log("Added product is not matching",true);
 	}
-		
-		
+			
 		
 	}
 }

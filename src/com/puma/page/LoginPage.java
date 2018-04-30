@@ -12,16 +12,21 @@ import Generic.Utility;
 public class LoginPage extends BasePage
 
 {
+/**
+ * author Kusum	
+ */
 	
-	
-@FindBy(xpath="(//a[@href='https://in.puma.com/men.html'])[1]")
+@FindBy(xpath="(//a[@href='https://in.puma.com/men.html']")
 private static  WebElement men;
 
 
 
 		@FindBy(xpath="(//a[contains(@href,'https://in.puma.com/men/sports/running')])[1]")
 		private static  WebElement menrunning;
-
+/**
+ * 
+ * initialising the Elements
+ */
 public LoginPage(WebDriver driver)
 {
 	
@@ -38,11 +43,9 @@ public void verifyLoginPage(String title)
 
 public void menclick()
 {
-	men.click();
-//Actions act=new Actions(driver);
 	
-	//act.moveToElement(men).perform();
-	//Utility.action(men);
+
+	Utility.action(men);
 }
 public void menrunning1()
 {

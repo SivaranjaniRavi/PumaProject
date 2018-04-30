@@ -11,14 +11,25 @@ public class Utility
 
 {
 	
+	/**
+	 * author Kusum	
+	 */
+	
 	public static WebDriver driver;
-/*public static void action(WebElement target)
+	
+	/**
+	 * Parameter as the target element.
+	 */
+public static void action(WebElement target)
 {
 	Actions act=new Actions(driver);
 	
 	act.moveToElement(target).perform();
 	
-}*/
+}
+/**
+ * Scrolling down in y axis
+ */
 public static void scroll()
 {
 	JavascriptExecutor j=(JavascriptExecutor)driver;

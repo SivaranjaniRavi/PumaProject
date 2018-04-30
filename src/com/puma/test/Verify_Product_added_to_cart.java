@@ -14,37 +14,40 @@ public class Verify_Product_added_to_cart extends BaseTest
 
 
 {
+	/**
+	 * author Kusum
+	 */
 	public static WebDriver driver;
 @Test()
 public static void verifyproduct() throws InterruptedException
 {
 	
 	LoginPage l1=new LoginPage(driver);
+	Menshoepage m1=new Menshoepage(driver);
+	ShoeDescription s1=new ShoeDescription (driver);
 	
-	//l1.verifyLoginPage("abcd");
-	Thread.sleep(10000);
+	l1.verifyLoginPage(System.getProperty(p.getProperty(title));
+	Thread.sleep(2000);
 	l1.menclick();
 	Thread.sleep(2000);
 	l1.menrunning1();
 	Thread.sleep(2000);
-	
-	
-	Menshoepage m1=new Menshoepage(driver);
-	
+	/**
+	 * Selecting the shoe
+	 */
 	m1.scrollDown1();
 	m1.selectShoe();
-	
-	ShoeDescription s1=new ShoeDescription (driver);
-	
 	Thread.sleep(2000);
 	s1.clickOnSelectSize();
 	Thread.sleep(2000);
 	s1.clickOnSize();
 	Thread.sleep(2000);
 	s1.clickOnCart();
-	
+	/**
+	 * Adding to the cart and verifying the item displayed is same as selected
+	 */
 	CartPage c1=new CartPage(driver);
-	c1.verifyWebElement("IGNITE EvoKNIT Lo 2 Men's Running Shoes");
+	c1.verifyWebElement(System.getProperty(p.getProperty(shoename));
 	
 }
 }
